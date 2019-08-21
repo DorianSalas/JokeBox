@@ -11,7 +11,16 @@ session_start();
 <body>
 
 
-	<?php  ?>
+	<div class="grid-container">
+		<div class="header"><?php include "php/header.php"?></div>
+  		<div class="main">
+    		<div class="jokebox"><?php include "php/jukeBox.php"?></div>
+    		<div class="genre"<?php include "php/carousel.php"?>></div>
+    		<div class="listsong"><?php include "php/listsong.php"?></div>
+  		</div>
+  		
+	</div>
+
 	<script src="js/main.js"></script>
 </body>
 </html>

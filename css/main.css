@@ -10,3 +10,34 @@ body{
 	padding: 0;
 	margin: 0;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "header" "main";
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "genre jokebox listsong";
+  grid-area: main;
+}
+
+.jokebox { grid-area: jokebox;
+	background-color: gray;
+}
+
+.genre { grid-area: genre;
+	background-color: lightgray;
+}
+
+.listsong { grid-area: listsong;
+	background-color: lightblue;
+}
+
+.header { grid-area: header;
+	background-color: pink;
+}
