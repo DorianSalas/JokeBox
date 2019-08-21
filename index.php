@@ -47,14 +47,16 @@ session_start();
 
     </div>
 
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.js"></script>
+
     <script src="js/header.js"></script>
     <script src="js/jokeBox.js"></script>
+    <script src="js/carousel.js"></script>
 
 
     <script src="js/main.js"></script>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/slick.js"></script>
 </body>
 
 </html>
