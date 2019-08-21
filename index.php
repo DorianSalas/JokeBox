@@ -20,7 +20,6 @@
 		<link rel="stylesheet" href="/css/carousel/slick.css">
 		<link rel="stylesheet" href="/css/carousel/slick-theme.css">
 		
-		
 	</head>
 
 	<body>
