@@ -58,6 +58,7 @@
 		<script src="js/header.js"></script>
 		<script src="js/jokeBox.js"></script>
 		<script src="js/carousel.js"></script>
+		<script src="js/listSong.js"></script>
 
 		<script src="js/main.js"></script>
 

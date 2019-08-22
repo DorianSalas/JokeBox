@@ -29,58 +29,58 @@
 	</div>
 	<div id="listsong">
 		<!-- listsong -->
-		<div class="song play">
+		<!-- <div class="song play">
 			<img src="img/Nani.png" class="song_img">
 			<div class="song_info">
-				<div class="song_title">Sandstorm</div> <!-- Titre -->
-				<div class="song_artist">Darude</div> <!-- Auteur -->
+				<div class="song_title">Sandstorm</div>
+				<div class="song_artist">Darude</div> 
 			</div>			
 		</div>
 
 		<div class="song">
 			<img src="img/Nani.png" class="song_img">
 			<div class="song_info">
-				<div class="song_title">No Halo</div> <!-- Titre -->
-				<div class="song_artist">BROCKHAMPTON</div> <!-- Auteur -->
+				<div class="song_title">No Halo</div> 
+				<div class="song_artist">BROCKHAMPTON</div> 
 			</div>			
 		</div>
 
-		<!-- TODELETE -->
+		
 		<div class="song">
 			<img src="img/Nani.png" class="song_img">
 			<div class="song_info">
-				<div class="song_title">FCKD</div> <!-- Titre -->
-				<div class="song_artist">Hyper</div> <!-- Auteur -->
+				<div class="song_title">FCKD</div> 
+				<div class="song_artist">Hyper</div> 
 			</div>			
 		</div>
 		<div class="song">
 			<img src="img/Nani.png" class="song_img">
 			<div class="song_info">
-				<div class="song_title">The Resistance</div> <!-- Titre -->
-				<div class="song_artist">Drivepilot</div> <!-- Auteur -->
+				<div class="song_title">The Resistance</div> 
+				<div class="song_artist">Drivepilot</div> 
 			</div>			
 		</div>
 		<div class="song">
 			<img src="img/Nani.png" class="song_img">
 			<div class="song_info">
-				<div class="song_title">Desolation</div> <!-- Titre -->
-				<div class="song_artist">Slooze</div> <!-- Auteur -->
+				<div class="song_title">Desolation</div> 
+				<div class="song_artist">Slooze</div> 
 			</div>			
 		</div>
 		<div class="song">
 			<img src="img/Nani.png" class="song_img">
 			<div class="song_info">
-				<div class="song_title">Miami Showdown</div> <!-- Titre -->
-				<div class="song_artist">Digitalism</div> <!-- Auteur -->
+				<div class="song_title">Miami Showdown</div>
+				<div class="song_artist">Digitalism</div>
 			</div>			
 		</div>
 		<div class="song">
 			<img src="img/Nani.png" class="song_img">
 			<div class="song_info">
-				<div class="song_title">Omega</div> <!-- Titre -->
-				<div class="song_artist">Absolute Valentine</div> <!-- Auteur -->
+				<div class="song_title">Omega</div> 
+				<div class="song_artist">Absolute Valentine</div> 
 			</div>			
-		</div>
+		</div> -->
 		
 
 	</div>
