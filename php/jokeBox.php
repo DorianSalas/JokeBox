@@ -21,4 +21,12 @@
 </div>
 <div id="jukeInfos">
     <h3>INFOS</h3>
+    <svg width="200px" height="100%" viewBox="0 0 42 42" class="donut">
+  <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent">teoihouhst</circle>lokn
+  <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#459AC2" stroke-width="10"></circle>
+  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#BC3135" stroke-width="10" stroke-dasharray="47.5 60" stroke-dashoffset="450">blablablablalbla</circle>
+  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#418452" stroke-width="10" stroke-dasharray="15 85" stroke-dashoffset="0"></circle>
+  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#505085" stroke-width="10" stroke-dasharray="32.5 67.5" stroke-dashoffset="-15"></circle>
+</svg>
+
 </div>
