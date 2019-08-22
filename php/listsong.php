@@ -22,7 +22,8 @@
 			</div>
 		</div>
 		<div id="filter_input">
-			<input type="text" name="search">
+			<input type="text" name="search" placeholder="Search...">
+			<button type="submit" class="searchButton"></button>
 		</div>
 
 	</div>
