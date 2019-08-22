@@ -1,4 +1,8 @@
 // Here we'll do the actual carousel action
 
-
-  console.log("oof");
+$(document).ready(function(){
+    $('.carousel').slick({
+        vertical: true,
+        draggable: false,
+    });
+  });
