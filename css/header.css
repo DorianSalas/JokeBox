@@ -27,14 +27,15 @@ header div {
 #divDeco,
 #divCo {
     /* border-right: solid 2px black; */
-    background-color: blue;
+    background-color: #03162e;
+    color: lightgray;
 }
 
 #divTitle {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: #DFE0E2;
     height: 100%;
 }
 
@@ -43,7 +44,7 @@ header div {
     height: 0;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
-    border-left: 30px solid red;
+    border-left: 30px solid #DFE0E2;
 }
 
 .arrow-left {
@@ -51,5 +52,5 @@ header div {
     height: 0;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
-    border-right: 30px solid red;
+    border-right: 30px solid #DFE0E2;
 }
