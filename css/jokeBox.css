@@ -61,7 +61,7 @@
     background-color: #9fffb4;
     border-radius: 50%;
     border: 5px solid #1d1d1d;
-    z-index: -1;
+    /* z-index: -1; */
     -webkit-animation: lighting 5s infinite;
     animation: lighting 5s infinite;
 }
