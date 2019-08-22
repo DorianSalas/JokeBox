@@ -30,7 +30,7 @@
 	<div id="listsong">
 		<!-- listsong -->
 		<div class="song play">
-			<div src="img/Nani.png" class="song_img"></div>
+			<img src="img/Nani.png" class="song_img">
 			<div class="song_info">
 				<div class="song_title">Sandstorm</div> <!-- Titre -->
 				<div class="song_artist">Darude</div> <!-- Auteur -->
@@ -38,7 +38,7 @@
 		</div>
 
 		<div class="song">
-			<div src="img/Nani.png" class="song_img"></div>
+			<img src="img/Nani.png" class="song_img">
 			<div class="song_info">
 				<div class="song_title">No Halo</div> <!-- Titre -->
 				<div class="song_artist">BROCKHAMPTON</div> <!-- Auteur -->
@@ -47,35 +47,35 @@
 
 		<!-- TODELETE -->
 		<div class="song">
-			<div src="img/Nani.png" class="song_img"></div>
+			<img src="img/Nani.png" class="song_img">
 			<div class="song_info">
 				<div class="song_title">FCKD</div> <!-- Titre -->
 				<div class="song_artist">Hyper</div> <!-- Auteur -->
 			</div>			
 		</div>
 		<div class="song">
-			<div src="img/Nani.png" class="song_img"></div>
+			<img src="img/Nani.png" class="song_img">
 			<div class="song_info">
 				<div class="song_title">The Resistance</div> <!-- Titre -->
 				<div class="song_artist">Drivepilot</div> <!-- Auteur -->
 			</div>			
 		</div>
 		<div class="song">
-			<div src="img/Nani.png" class="song_img"></div>
+			<img src="img/Nani.png" class="song_img">
 			<div class="song_info">
 				<div class="song_title">Desolation</div> <!-- Titre -->
 				<div class="song_artist">Slooze</div> <!-- Auteur -->
 			</div>			
 		</div>
 		<div class="song">
-			<div src="img/Nani.png" class="song_img"></div>
+			<img src="img/Nani.png" class="song_img">
 			<div class="song_info">
 				<div class="song_title">Miami Showdown</div> <!-- Titre -->
 				<div class="song_artist">Digitalism</div> <!-- Auteur -->
 			</div>			
 		</div>
 		<div class="song">
-			<div src="img/Nani.png" class="song_img"></div>
+			<img src="img/Nani.png" class="song_img">
 			<div class="song_info">
 				<div class="song_title">Omega</div> <!-- Titre -->
 				<div class="song_artist">Absolute Valentine</div> <!-- Auteur -->
