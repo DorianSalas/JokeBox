@@ -1,16 +1,30 @@
 /* Here let's customize our carousel */
 
+#carouselContainer {
+    height: calc(100vh - 150px);
+    margin: 0;
+}
+
 .carouselLine img {
+    width: 35%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     max-height: 180px;
     border-radius: 50%;
     cursor: pointer;
 }
 
+.carouselLine img:hover {
+    opacity: 0.5;
+}
+
 .carouselLine {
-    display: flex;
+    display: flex!important;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -21,5 +35,16 @@
 }
 
 .carouselArrow {
+    cursor: pointer;
     width: 50px;
+}
+
+.carouselArrow:hover {
+    opacity: 0.6
+}
+
+#carouselDots {
+    position: fixed;
+    left: 0;
+    top: 50vh
 }
