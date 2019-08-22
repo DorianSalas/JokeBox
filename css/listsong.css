@@ -1,0 +1,55 @@
+/*list song css*/
+
+#listsong_main{
+	display: grid;
+  	grid-template-columns: 1fr;
+  	grid-template-rows: 10fr 90fr;
+
+  	height: 90vh; /*The size must be hard set*/
+
+}
+
+#filtertab{
+
+}
+
+#listsong{
+	/*display: flex;
+	flex-direction: column;
+	justify-content: flex-start;*/
+
+	background-color: #e6f2f2;
+	padding: 5px;
+
+	overflow: scroll;
+
+}
+
+.song{
+  	display: grid;
+  	grid-template-columns: 1fr 1fr;
+  	grid-template-rows: 1fr;
+
+	height: 100px;
+	margin: 3px;
+}
+
+.song:hover{
+	background-color: white;
+}
+
+.song_img{
+	height: 100px
+
+}
+
+.song_info{
+
+}
+
+.song_title{
+
+}
+.song_artist{
+
+}
