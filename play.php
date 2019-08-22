@@ -11,8 +11,8 @@
 	<body>
 		<div id="audio_player">
 			<audio id="player"
-	        controls
-	        src="/media/examples/t-rex-roar.mp3">
+	        controls>
+	        	<source src="" />
 	    	</audio>
     	</div>
 
@@ -24,35 +24,50 @@
 
 
 		<script type="text/javascript">
-			let listmusic
+			let listmusicreal
 			let btn_music
-
-			function getList(){
-				btn_music=document.getElementsByClassName("song");
-				listmusic=[]
-
-				for (var i = 0; i < btn_music.length; i++) { //peut être parcourir liste autre sens
-					listmusic.push(btn_music[i].attributes.value.value)
-				}
-			}
-			getList()
 			let playerdiv=document.getElementById("audio_player");
 			let player=document.getElementById("player");
 
-			for (let i = 0; i < listmusic.length; i++) {
-				console.log(listmusic[i])
-				btn_music[i].addEventListener("click",()=>{
-					playerdiv.innerHTML="<audio id='player' controls src='music/"+listmusic[i]+"' track='"+i+"'></audio>";
+			let endfunc=function(){
+				console.log(player.attributes.track.value)
+				if (player.attributes.track.value<listmusicreal.length-1) {
+					playerdiv.innerHTML="<audio id='player' controls track='"+(player.attributes.track.value++)+"'><source src='music/"+listmusicreal[player.attributes.track.value++]+"' /></audio>"
 					player=document.getElementById("player");
-					console.log(player.attributes.track.value)
-					})
+					player.onended=endfunc;
+					console.log(player.attributes.track.value++)
+				}
+				else{
+					console.log("Fin de la liste")
+				}
 			}
 
-			player.addEventListener("ended",()=>{
-				//Lecture terminée
-				console.log(player.attributes.track.value)
-			});
+			function getList(){
+				btn_music=document.getElementsByClassName("song");
+				listmusicreal=[]
 
+				for (var i = 0; i < btn_music.length; i++) { //peut être parcourir liste autre sens
+					listmusicreal.push(btn_music[i].attributes.value.value)
+				}
+				console.log(listmusicreal)
+
+				playerdiv.innerHTML="<audio id='player' controls autoplay track='0'><source src='music/"+listmusicreal[0]+"' /></audio>";
+				player=document.getElementById("player");
+				player.onended=endfunc;
+			}
+			getList()
+
+			for (let i = 0; i < listmusicreal.length; i++) {
+				console.log(listmusicreal[i])
+				btn_music[i].addEventListener("click",()=>{
+					playerdiv.innerHTML="<audio id='player' controls autoplay track='"+i+"'><source src='music/"+listmusicreal[i]+"' /></audio>";
+					player=document.getElementById("player");
+					player.onended=endfunc;
+					console.log(player.attributes.track.value)
+					})
+			};
+
+		
 			
 
 		</script>
