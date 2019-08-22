@@ -6,3 +6,8 @@ async function getPage(url) {
 	let text = await res.json()
 	return text
 }
+
+
+function jsonFetchedCallback(data) {
+    console.log(data);
+}
