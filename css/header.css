@@ -19,6 +19,9 @@ header div {
 #divDeco p {
     /* border-right: solid 2px black; */
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #divDeco,
@@ -30,7 +33,9 @@ header div {
 #divTitle {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: red;
+    height: 100%;
 }
 
 .arrow-right {
