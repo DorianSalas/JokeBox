@@ -1,15 +1,15 @@
 /* Here let's customize our carousel */
 
 #carouselContainer {
-    height: calc(100vh - 150px);
+    height: auto;
     margin: 0;
 }
 
 .carouselLine img {
-    width: 35%;
+    width: 180px;
+    height: 180px;
     margin-top: 10px;
     margin-bottom: 10px;
-    max-height: 180px;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -47,4 +47,11 @@
     position: absolute;
     left: 0;
     top: 50%
+}
+
+@media only screen and (max-width: 1200px) {
+    .carouselLine img {
+        width: 200px;
+        height: 200px;
+    }
 }
