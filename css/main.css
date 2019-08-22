@@ -16,6 +16,8 @@ body{
   grid-template-columns: 1fr;
   grid-template-rows: 50px 1fr;
   grid-template-areas: "header" "main";
+
+  height: 100vh;
 }
 
 .main {
@@ -24,6 +26,7 @@ body{
   grid-template-rows: 1fr;
   grid-template-areas: "genre jokebox listsong";
   grid-area: main;
+
 }
 
 .jokebox { grid-area: jokebox;
