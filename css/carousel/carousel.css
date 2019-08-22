@@ -44,7 +44,7 @@
 }
 
 #carouselDots {
-    position: fixed;
+    position: absolute;
     left: 0;
-    top: 50vh
+    top: 50%
 }
