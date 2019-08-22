@@ -31,6 +31,14 @@ header div {
     color: lightgray;
 }
 
+#divDeco:hover, #divCo:hover {
+    background-color: #123866;
+}
+
+#divCo p#connexionText {
+    cursor: pointer
+}
+
 #divTitle {
     display: flex;
     justify-content: center;
@@ -58,4 +66,13 @@ header div {
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     border-right: 30px solid #DFE0E2;
+}
+
+#connexionInputGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    height: 150px;
 }
