@@ -9,11 +9,13 @@
 	<head>
 		
 		<meta charset="utf-8">
-		<title>JokeBox</title>
+        <title>JokeBox</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		
 		<link href="css/header.css" rel="stylesheet" type="text/css" />
-		<link href="css/jokebox.css" rel="stylesheet" type="text/css" />
+		<link href="css/jokeBox.css" rel="stylesheet" type="text/css" />
 
 		<link href="css/carousel/carousel.css" rel="stylesheet" type="text/css" />
 
@@ -48,12 +50,12 @@
 
 		</div>
 
+        <script src="js/jquery.js"></script>
+		<script src="js/slick.js"></script>
+
 		<script src="js/header.js"></script>
 		<script src="js/jokeBox.js"></script>
 		<script src="js/carousel.js"></script>
-
-		<script src="js/jquery.js"></script>
-		<script src="js/slick.js"></script>
 
 		<script src="js/main.js"></script>
 

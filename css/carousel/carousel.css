@@ -1,7 +1,25 @@
 /* Here let's customize our carousel */
 
 .carouselLine img {
-    width: 40%;
-    height: 30%;
-    border-radius: 50%
+    max-height: 180px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carouselLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.carouselArrowCont {
+    display: flex;
+    justify-content: center
+}
+
+.carouselArrow {
+    width: 50px;
 }
