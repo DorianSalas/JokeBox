@@ -2,7 +2,7 @@
 <header>
 
     <div id='divCo'>
-        <p>Log In</p>
+        <p id="connexionText">Log In</p>
         <div class="arrow-left"></div>
     </div>
 
