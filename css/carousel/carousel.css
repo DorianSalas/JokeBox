@@ -1,12 +1,14 @@
 /* Here let's customize our carousel */
 
 #carouselContainer {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 150px);
+    margin: 0;
 }
 
 .carouselLine img {
     width: 35%;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     max-height: 180px;
     border-radius: 50%;
     cursor: pointer;
@@ -33,5 +35,16 @@
 }
 
 .carouselArrow {
+    cursor: pointer;
     width: 50px;
+}
+
+.carouselArrow:hover {
+    opacity: 0.6
+}
+
+#carouselDots {
+    position: fixed;
+    left: 0;
+    top: 50vh
 }
