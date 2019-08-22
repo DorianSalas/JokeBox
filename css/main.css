@@ -29,6 +29,8 @@ body{
   grid-template-areas: "genre jokebox listsong";
   grid-area: main;
 
+  height: 100vh;
+
 }
 
 .jokebox { grid-area: jokebox;
@@ -37,6 +39,7 @@ body{
 
 .genre { grid-area: genre;
 	background-color: lightgray;
+	position: relative;
 }
 
 .listsong { grid-area: listsong;
@@ -45,4 +48,16 @@ body{
 
 .header { grid-area: header;
 	background-color: pink;
+}
+
+@media only screen and (max-width: 1200px) {
+	.main {
+	  display: grid;
+	  grid-template-columns: 1fr;
+	  grid-template-rows: 1fr 1fr 1fr;
+	  grid-template-areas: "jokebox" "listsong" "genre";
+	  grid-area: main;
+
+  		height: auto;
+	}
 }
