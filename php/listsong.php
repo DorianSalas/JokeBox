@@ -5,20 +5,20 @@
 		<!-- filter -->
 		<div id="filter_boxes">
 			<div class="filter_box">
-			  <input type="radio" id="az_order" name="filter" value="az_order">
-			  <label for="az_order">A-Z</label>
+			  <input type="radio" id="titleAsc" name="filter" value="az_order" checked>
+			  <label for="az_order">Title A-Z</label>
 			</div>
 			<div class="filter_box">
-			  <input type="radio" id="za_order" name="filter" value="za_order">
-			  <label for="za_order">Z-A</label>
+			  <input type="radio" id="titleDesc" name="filter" value="za_order">
+			  <label for="za_order">Title Z-A</label>
 			</div>
 			<div class="filter_box">
-			  <input type="radio" id="artist" name="filter" value="artist">
-			  <label for="artist">Artist</label>
+			  <input type="radio" id="artistAsc" name="filter" value="artist">
+			  <label for="artist">Artist A-Z</label>
 			</div>
 			<div class="filter_box">
-			  <input type="radio" id="date" name="filter" value="date">
-			  <label for="date">Date</label>
+			  <input type="radio" id="artistDesc" name="filter" value="date">
+			  <label for="date">Artist Z-A</label>
 			</div>
 		</div>
 		<div id="filter_input">

@@ -7,7 +7,23 @@ async function getPage(url) {
 	return text
 }
 
+let theFilter;
 
 function jsonFetchedCallback(data) {
-    console.log(data);
+    theFilter = new ListFilter(data);
+
+    // let's add the events
+
+    document.getElementById("titleAsc").addEventListener("change", () => {
+        theFilter.sortAlphabeticalAsc();
+    });
+    document.getElementById("titleDesc").addEventListener("change", () => {
+        theFilter.sortAlphabeticalDesc();
+    })
+    document.getElementById("artistAsc").addEventListener("change", () => {
+        theFilter.sortArtistAsc();
+    })
+    document.getElementById("artistDesc").addEventListener("change", () => {
+        theFilter.sortArtistDesc();
+    })
 }

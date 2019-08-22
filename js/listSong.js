@@ -13,26 +13,6 @@ getSongs('json/listsong.json').then(data => {
     // console.log(data);
     let myResultDOM = '';
 
-    data.sort((a, b) => {
-        if (a.title < b.title) {
-            return -5;
-        }
-        else if (a.title > b.title) {
-            return 5;
-        }
-        else {
-            return 0;
-        }
-    });
-    for (let i = 0; i < data.length; i++) {
-
-        myResultDOM += ('<div class="song" value="' + data[i].url + '"> <img src="' + data[i].thumb + '" class="song_img"> <div class="song_info"> <div class="song_title">' + data[i].title + '</div> <div class="song_artist">' + data[i].artist + '</div> </div> </div>');
-
-    }
-    // console.log(myResultDOM);
-    let myList = document.querySelector('#listsong');
-    // console.log(myList.innerHTML);
-    myList.innerHTML = myResultDOM;
-    songList = data;
-    jsonFetchedCallback(songList); // This function is in 'main.js'
+    // Some things here went to ListFilter.js !!
+    jsonFetchedCallback(data); // This function is in 'main.js'
 });
