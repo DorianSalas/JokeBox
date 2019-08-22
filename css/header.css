@@ -1,1 +1,50 @@
 /* bla */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+header div {
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+#divCo p,
+#divDeco p {
+    /* border-right: solid 2px black; */
+    width: 100%;
+}
+
+#divDeco,
+#divCo {
+    /* border-right: solid 2px black; */
+    background-color: blue;
+}
+
+#divTitle {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 30px solid red;
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 30px solid red;
+}
