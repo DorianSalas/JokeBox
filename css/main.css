@@ -29,8 +29,6 @@ body{
   grid-template-areas: "genre jokebox listsong";
   grid-area: main;
 
-  height: 100vh;
-  width: 100vw;
 
 }
 
