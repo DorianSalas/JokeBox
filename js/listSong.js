@@ -14,5 +14,7 @@ getSongs('json/listsong.json').then(data => {
     let myResultDOM = '';
 
     // Some things here went to ListFilter.js !!
+
+    
     jsonFetchedCallback(data); // This function is in 'main.js'
 });

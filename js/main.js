@@ -1,11 +1,13 @@
 //main.js
-	//Main javascript file
+//Main javascript file
 
 async function getPage(url) {
-	let res = await fetch(url)
-	let text = await res.json()
-	return text
+    let res = await fetch(url)
+    let text = await res.json()
+    return text
 }
+
+const filterItemList = document.querySelectorAll(".carouselLine .filterItem");
 
 let theFilter;
 
@@ -26,4 +28,11 @@ function jsonFetchedCallback(data) {
     document.getElementById("artistDesc").addEventListener("change", () => {
         theFilter.sortArtistDesc();
     })
+
+    for (let i = 0; i < filterItemList.length; i++) {
+        filterItemList[i].addEventListener("click", () => {
+            theFilter.filter(filterItemList[i].id)
+        });
+    }
+
 }
