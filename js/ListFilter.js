@@ -6,8 +6,6 @@ class ListFilter {
     }
 
     render(newData) {
-        console.log(newData);
-        console.log(this.rawData);
         let assembledHtml = ''; // create temp variable
         newData.forEach(element => { // build temp variable
             assembledHtml += ('<div class="song" value="' + element.url + '"> <img src="' + element.thumb + '" class="song_img"> <div class="song_info"> <div class="song_title">' + element.title + '</div> <div class="song_artist">' + element.artist + '</div> </div> </div>');
@@ -94,7 +92,6 @@ class ListFilter {
         let newFiltered = this.rawData.filter(element => {
             return element.tag.trim() === type.trim();
         });
-        console.log(newFiltered);
         this.render(newFiltered);
     }
 }
