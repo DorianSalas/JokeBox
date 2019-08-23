@@ -1,7 +1,9 @@
 class ListFilter {
 
-    constructor(data) {
+    constructor(data, updaterFunc) {
         this.rawData = data; // This is useful for backup (like filter)
+
+        this.update = updaterFunc;
         this.sortAlphabeticalAsc();
     }
 
@@ -11,6 +13,7 @@ class ListFilter {
             assembledHtml += ('<div class="song" value="' + element.url + '"> <img src="' + element.thumb + '" class="song_img"> <div class="song_info"> <div class="song_title">' + element.title + '</div> <div class="song_artist">' + element.artist + '</div> </div> </div>');
         });
         document.getElementById('listsong').innerHTML = assembledHtml; // push temp variable
+        this.update();
     }
 
     // SORT
