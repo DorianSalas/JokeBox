@@ -6,19 +6,19 @@
 		<div id="filter_boxes">
 			<div class="filter_box">
 			  <input type="radio" id="titleAsc" name="filter" value="az_order" checked>
-			  <label for="az_order">Title A-Z</label>
+			  <label for="titleAsc">Title A-Z</label>
 			</div>
 			<div class="filter_box">
 			  <input type="radio" id="titleDesc" name="filter" value="za_order">
-			  <label for="za_order">Title Z-A</label>
+			  <label for="titleDesc">Title Z-A</label>
 			</div>
 			<div class="filter_box">
 			  <input type="radio" id="artistAsc" name="filter" value="artist">
-			  <label for="artist">Artist A-Z</label>
+			  <label for="artistAsc">Artist A-Z</label>
 			</div>
 			<div class="filter_box">
 			  <input type="radio" id="artistDesc" name="filter" value="date">
-			  <label for="date">Artist Z-A</label>
+			  <label for="artistDesc">Artist Z-A</label>
 			</div>
 		</div>
 		<div id="filter_input">
