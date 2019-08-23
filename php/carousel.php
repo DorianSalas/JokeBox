@@ -6,34 +6,52 @@
 <div id="carouselContainer" class="carousel">
 
     <div class="carouselLine">
-        <img id="Pop" class="filterItem" src="img/filter/pop.png">
-        <img id="Rock" class="filterItem" src="img/filter/rock.png">
+        <div id="Pop" class="filterItem">
+        </div>
+        <div id="Rock" class="filterItem">
+        </div>
 
-        <img id="Rap" class="filterItem" src="img/filter/rap.png">
-        <img id="Opera" class="filterItem" src="img/filter/opera.png">
+        <div id="Rap" class="filterItem">
+        </div>
+        <div id="Opera" class="filterItem">
+        </div>
 
-        <img id="RNB" class="filterItem" src="img/filter/rnb.png">
-        <img id="Reggae" class="filterItem" src="img/filter/reggae.png">
+        <div id="RNB" class="filterItem">
+        </div>
+        <div id="Reggae" class="filterItem">
+        </div>
     </div>
     <div class="carouselLine">
-        <img id="Paillard" class="filterItem" src="img/filter/paillard.png">
-        <img id="Jazz" class="filterItem" src="img/filter/jazz.png">
+        <div id="Paillard" class="filterItem">
+        </div>
+        <div id="Jazz" class="filterItem">
+        </div>
 
-        <img id="Slam" class="filterItem" src="img/filter/slam.png">
-        <img id="Experimental" class="filterItem" src="img/filter/experimental.png">
+        <div id="Slam" class="filterItem">
+        </div>
+        <div id="Experimental" class="filterItem">
+        </div>
 
-        <img id="Metal" class="filterItem" src="img/filter/metal.png">
-        <img id="Disco" class="filterItem" src="img/filter/disco.png">
+        <div id="Metal" class="filterItem">
+        </div>
+        <div id="Disco" class="filterItem">
+        </div>
     </div>
     <div class="carouselLine">
-        <img id="Orchestral" class="filterItem" src="img/filter/orchestral.png">
-        <img id="Classique" class="filterItem" src="img/filter/classique.png">
+        <div id="Orchestral" class="filterItem">
+        </div>
+        <div id="Classique" class="filterItem">
+        </div>
 
-        <img id="Oriental" class="filterItem" src="img/filter/oriental.png">
-        <img id="Folklorique" class="filterItem" src="img/filter/folklore.png">
+        <div id="Oriental" class="filterItem">
+        </div>
+        <div id="Folklorique" class="filterItem">
+        </div>
 
-        <img id="Country" class="filterItem" src="img/filter/country.png">
-        <img id="Blues" class="filterItem" src="img/filter/blues.png">
+        <div id="Country" class="filterItem">
+        </div>
+        <div id="Blues" class="filterItem">
+        </div>
     </div>
 </div>
 

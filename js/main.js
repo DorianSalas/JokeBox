@@ -9,6 +9,11 @@ async function getPage(url) {
 
 const filterItemList = document.querySelectorAll(".carouselLine .filterItem");
 
+filterItemList.forEach(element => {
+    element.style.backgroundImage = "url('../img/filter/" + element.id.toLowerCase() + ".png')";
+    element.innerHTML = '<p>'+element.id.toUpperCase()+'</p>';
+});
+
 let theFilter;
 
 function jsonFetchedCallback(data) {
