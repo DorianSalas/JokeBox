@@ -17,14 +17,18 @@ function jsonFetchedCallback(data) {
 
     document.getElementById("titleAsc").addEventListener("change", () => {
         theFilter.sortAlphabeticalAsc();
+        getList()
     });
     document.getElementById("titleDesc").addEventListener("change", () => {
         theFilter.sortAlphabeticalDesc();
+        getList()
     })
     document.getElementById("artistAsc").addEventListener("change", () => {
         theFilter.sortArtistAsc();
+        getList()
     })
     document.getElementById("artistDesc").addEventListener("change", () => {
         theFilter.sortArtistDesc();
+        getList()
     })
 }

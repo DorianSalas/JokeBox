@@ -1,9 +1,9 @@
 [
-    { "title": "3 Nights", "artist": "Dominic Fike", "thumb": "img/Nani.png", "url": "3 Nights.mp3", "tag": "Rap" },
-    { "title": "atmosphere", "artist": "Eyeless", "thumb": "img/Nani.png", "url": "Eyeless - atmosphere.mp3", "tag": "Lofi" },
-    { "title": "No Halo", "artist": "BROCKHAMPTON", "thumb": "img/Nani.png", "url": "No Halo.mp3", "tag": "Rap" },
-    { "title": "Let Me Hear That", "artist": "Haywyre", "thumb": "img/Nani.png", "url": "Haywyre - Let Me Hear That.mp3", "tag": "Disco" },
-    { "title": "Superdiscoteca", "artist": "Myd", "thumb": "img/Nani.png", "url": "Myd - Superdiscoteca.mp3", "tag": "Electro" },
-    { "title": "Complètement fou", "artist": "Yelle", "thumb": "img/Nani.png", "url": "Yelle - Complètement fou.mp3", "tag": "Pop" }
+    { "title": "3 Nights", "artist": "Dominic Fike", "thumb": "img/dominic.jpg", "url": "3 Nights.mp3", "tag": "Rap" },
+    { "title": "atmosphere", "artist": "Eyeless", "thumb": "img/eyeless.jpg", "url": "Eyeless - atmosphere.mp3", "tag": "Lofi" },
+    { "title": "No Halo", "artist": "BROCKHAMPTON", "thumb": "img/brock.jpeg", "url": "No Halo.mp3", "tag": "Rap" },
+    { "title": "Let Me Hear That", "artist": "Haywyre", "thumb": "img/haywyre.jpg", "url": "Haywyre - Let Me Hear That.mp3", "tag": "Disco" },
+    { "title": "Superdiscoteca", "artist": "Myd", "thumb": "img/myd.jpg", "url": "Myd - Superdiscoteca.mp3", "tag": "Electro" },
+    { "title": "Complètement fou", "artist": "Yelle", "thumb": "img/yelle.jpg", "url": "Yelle - Complètement fou.mp3", "tag": "Pop" }
 
 ]
