@@ -6,9 +6,8 @@
 /*Audio Controller*/
 
 #audio_player {
-    position: fixed;
+    position: absolute;
     top: 0;
-    right: 50%;
 }
 
 .jukebox {

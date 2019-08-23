@@ -36,6 +36,7 @@ body{
 
 .jokebox { grid-area: jokebox;
 	background-color: gray;
+	position: relative;
 }
 
 .genre { grid-area: genre;

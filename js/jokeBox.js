@@ -10,6 +10,13 @@ let endfunc=function(){
 		player=document.getElementById("player");
 		player.onended=endfunc;
 		console.log(player.attributes.track.value++)
+
+		for (let i = 0; i < btn_music.length; i++) {
+			btn_music[i].className="song"
+		}
+
+		console.log(player.attributes.track.value)
+		btn_music[player.attributes.track.value].className="song play"
 	}
 	else{
 		console.log("Fin de la liste")
