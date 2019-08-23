@@ -13,6 +13,7 @@ let theFilter;
 
 function jsonFetchedCallback(data) {
     theFilter = new ListFilter(data);
+    getList()
 
     // let's add the events
 

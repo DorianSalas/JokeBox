@@ -1,3 +1,8 @@
+<div id="audio_player">
+    <audio id="player" controls>
+        <source src="" />
+    </audio>
+</div>
 <div class="jukebox">
     <div class="jukebox__head">
         <div class="jukebox__record">

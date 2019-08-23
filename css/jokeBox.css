@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+/*Audio Controller*/
+#audio_player{
+    position: fixed;
+    top: 0;
+    right:50%;
+}
+
 .jukebox {
     position: relative;
     width: 250px;
