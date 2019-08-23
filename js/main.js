@@ -41,7 +41,8 @@ function jsonFetchedCallback(data) {
 
     for (let i = 0; i < filterItemList.length; i++) {
         filterItemList[i].addEventListener("click", () => {
-            theFilter.filter(filterItemList[i].id)
+            theFilter.filter(filterItemList[i].id);
+            getList();
         });
     }
 
