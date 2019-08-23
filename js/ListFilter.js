@@ -91,6 +91,10 @@ class ListFilter {
 
     // FILTER
     filter(type) {
-        console.log(type);
+        let newFiltered = this.rawData.filter(element => {
+            return element.tag.trim() === type.trim();
+        });
+        console.log(newFiltered);
+        this.render(newFiltered);
     }
 }
