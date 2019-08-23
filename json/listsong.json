@@ -1,9 +1,9 @@
 [
-    { "title": "FCKD", "artist": "Hyper", "thumb": "img/Nani.png", "url": "https://www.youtube.com/watch?v=Q_Xbx7IxKqE", "tag": "Rap" },
-    { "title": "Sandstorm", "artist": "Darude", "thumb": "img/Nani.png", "url": "https://www.youtube.com/watch?v=WcFOQxitZHc", "tag": "Rap" },
-    { "title": "No Halo", "artist": "BROCKHAMPTON", "thumb": "img/Nani.png", "url": "https://www.youtube.com/watch?v=TdWEhMOrRpQ", "tag": "Opera" },
-    { "title": "The Resistance", "artist": "Drivepilot", "thumb": "img/Nani.png", "url": "https://www.youtube.com/watch?v=r7CWEE3ZAWs", "tag": "RNB" },
-    { "title": "Desolation", "artist": "Slooze", "thumb": "img/Nani.png", "url": "https://www.youtube.com/watch?v=R0XZ9qjMil8", "tag": "Rock" },
-    { "title": "Miami Showdown", "artist": "Digitalism", "thumb": "img/Nani.png", "url": "https://www.youtube.com/watch?v=VixdIglCZXk", "tag": "Rock" }
+    { "title": "3 Nights", "artist": "Dominic Fike", "thumb": "img/Nani.png", "url": "3 Nights.mp3", "tag": "Rap" },
+    { "title": "atmosphere", "artist": "Eyeless", "thumb": "img/Nani.png", "url": "Eyeless - atmosphere.mp3", "tag": "Lofi" },
+    { "title": "No Halo", "artist": "BROCKHAMPTON", "thumb": "img/Nani.png", "url": "No Halo.mp3", "tag": "Rap" },
+    { "title": "Let Me Hear That", "artist": "Haywyre", "thumb": "img/Nani.png", "url": "Haywyre - Let Me Hear That.mp3", "tag": "Disco" },
+    { "title": "Superdiscoteca", "artist": "Myd", "thumb": "img/Nani.png", "url": "Myd - Superdiscoteca.mp3", "tag": "Electro" },
+    { "title": "Complètement fou", "artist": "Yelle", "thumb": "img/Nani.png", "url": "Yelle - Complètement fou.mp3", "tag": "Pop" }
 
 ]

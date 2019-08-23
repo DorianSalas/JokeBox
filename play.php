@@ -20,7 +20,12 @@
     	<a href="#" value="3 Nights.mp3" class="song">3 Nights</a>
     	<a href="#" value="Yelle - Complètement fou.mp3" class="song">Complètement fou</a>
 
-    	
+    	<style type="text/css">
+    		.play{
+    			font-weight: bold;
+    		}
+
+    	</style>
 
 
 		<script type="text/javascript">
@@ -44,6 +49,7 @@
 
 			function getList(){
 				btn_music=document.getElementsByClassName("song");
+				console.log(btn_music)
 				listmusicreal=[]
 
 				for (var i = 0; i < btn_music.length; i++) { //peut être parcourir liste autre sens
@@ -54,16 +60,26 @@
 				playerdiv.innerHTML="<audio id='player' controls autoplay track='0'><source src='music/"+listmusicreal[0]+"' /></audio>";
 				player=document.getElementById("player");
 				player.onended=endfunc;
+
+				btn_music[0].className="song play"
 			}
 			getList()
 
-			for (let i = 0; i < listmusicreal.length; i++) {
+			for (let i = 0; i < btn_music.length; i++) {
 				console.log(listmusicreal[i])
-				btn_music[i].addEventListener("click",()=>{
+				btn_music[i].addEventListener("click",(e)=>{
 					playerdiv.innerHTML="<audio id='player' controls autoplay track='"+i+"'><source src='music/"+listmusicreal[i]+"' /></audio>";
 					player=document.getElementById("player");
 					player.onended=endfunc;
 					console.log(player.attributes.track.value)
+
+					
+					for (let i = 0; i < btn_music.length; i++) {
+						btn_music[i].className="song"
+					}
+
+					console.log(e.srcElement.className)
+					e.srcElement.className="song play"
 					})
 			};
 
