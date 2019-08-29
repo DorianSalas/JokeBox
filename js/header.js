@@ -31,7 +31,7 @@ $('#divCo').on('click', async () => {
         });
     }
     else {
-        console.log('Login canceled');
+        // When user clics outside of modal or on the cross -- Closes modal
     }
 });
 

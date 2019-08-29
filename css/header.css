@@ -31,7 +31,7 @@ header div {
     color: lightgray;
 }
 
-#divDeco p:hover, #divCo p:hover {
+#divCo.bgChanging:hover, #divDeco.bgChanging:hover {
     background-color: #123866;
 }
 

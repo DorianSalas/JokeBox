@@ -90,7 +90,7 @@
 
 .song {
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 100px 3fr 1fr;
     grid-template-rows: 1fr;
     position: relative;
     height: 100px;
@@ -135,6 +135,45 @@
 
 .song_artist {
     font-style: italic;
+}
+
+.songPanel {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start
+}
+
+.songPanel .deleteBtn, .songPanel .editBtn {
+    padding: 3px;
+    min-width: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    box-shadow: 0px 2px 6px lightgray;
+    cursor: pointer;
+    z-index: 5
+}
+
+.songPanel .deleteBtn:hover {
+    background-color: rgba(109, 37, 37, 0.589);
+}
+
+.songPanel .editBtn:hover {
+    background-color: rgba(177, 177, 61, 0.651);
+}
+
+.songPanel .deleteBtn:active, .songPanel .editBtn:active {
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+}
+
+.songPanel .deleteBtn {
+    background-color: rgba(211, 60, 60, 0.589);
+}
+
+.songPanel .editBtn {
+    background-color: rgba(255, 255, 91, 0.651);
 }
 
 .play {
