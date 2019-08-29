@@ -72,3 +72,52 @@ async function addSong() {
         })
     }
 }
+
+//ADDPLAYLIST
+document.querySelector('#divAddPlaylist img').addEventListener('click', () => { addPlaylist(); });
+
+let tempoListSong = [ //VARIABLE TEMPORAIRE
+    "Bonjour",
+    "Musique",
+    "Beaucoup",
+    "Amour",
+    "Gloire"
+]
+let tempoPlaylist = [
+    "Beauté"
+]
+
+let htmlPlaylistEditor = '<div id="playlist_all"><div id="playlist_wrap"><input type="text" id="playlist_name" name="playlist_name" placeholder="Playlist"><div id="playlist_added">'
+
+for (var i = tempoPlaylist.length - 1; i >= 0; i--) {
+    htmlPlaylistEditor+='<div class="playlist_song">'+tempoPlaylist[i]+'</div>'    
+}
+
+htmlPlaylistEditor+='</div></div><div id="playlist_songs">'
+
+for (var i = tempoListSong.length - 1; i >= 0; i--) {
+    htmlPlaylistEditor+='<div class="playlist_song">'+tempoListSong[i]+'</div>'    
+}
+
+htmlPlaylistEditor+='</div></div>';
+
+async function addPlaylist(){
+    if (sessionStorage.getItem('connectedAs') !== null) {
+        let addSongForm = await Swal.fire({
+            titleText: 'Your playlist',
+            html: htmlPlaylistEditor,
+            focusConfirm: false,
+            preConfirm: () => {
+
+                return [
+                    
+                ]
+            }
+        });
+        
+    } else { // if disconnected
+        Swal.fire({
+            titleText: 'You must be connected to use this !'
+        })
+    }
+}
