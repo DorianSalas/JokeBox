@@ -13,21 +13,31 @@ getSongs('../php/songFetchApi.php').then(data => {
 
 document.querySelector('#divAddSong img').addEventListener('click', () => { addSong(); });
 
-function addSong() {
+async function addSong() {
     if (sessionStorage.getItem('connectedAs') !== null) {
-        Swal.fire({
+        let addSongForm = await Swal.fire({
             titleText: 'Add song',
             html: '<div id="addSongInputGroup"><label for="titleSongInput">Title :</label><input type="text" id="titleSongInput"></input><label for="tagSongInput">Tag :</label><input type="text" id="tagSongInput"></input><label for="imgSong">Choisir une image :</label><input type="file" id="imgSong"><label for="fileSong">Song :</label><input type="file" id="fileSong"></div>',
             focusConfirm: false,
             preConfirm: () => {
+
                 return [
-                    document.getElementById('logUserInput').value,
-                    document.getElementById('logPassInput').value
+                    document.getElementById('titleSongInput').value,
+                    document.getElementById('tagSongInput').value,
+                    document.getElementById('imgSong').value,
+                    document.getElementById('fileSong').value
                 ]
             }
         });
-    }
-    else { // if disconnected
+        console.log('0');
+        console.log(addSongForm.value[0]);
+        console.log('1');
+        console.log(addSongForm.value[1]);
+        console.log('2');
+        console.log(addSongForm.value);
+        console.log('3');
+        console.log(addSongForm);
+    } else { // if disconnected
         Swal.fire({
             titleText: 'You must be connected to use this !'
         })
