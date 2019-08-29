@@ -19,7 +19,7 @@
         async function start() {
             let didComplete = false;
             const results = await Swal.fire({
-                titleText: 'Connexion',
+                titleText: 'Create User',
                 html: '<div id="connexionInputGroup"><label for="logUserInput">Nom d\'utilisateur :</label><input type="text" id="logUserInput"></input><label for="logPassInput">Mot de passe :</label><input type="password" id="logPassInput"></input></div>',
                 focusConfirm: false,
                 preConfirm: () => {
