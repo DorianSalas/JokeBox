@@ -1,7 +1,9 @@
 <!-- bla -->
 <header>
     <div id='divCo'>
-        <p class="needLogout" id="connexionText">Log In</p>
+        <div id="loginTextCont">
+            <p class="needLogout" id="connexionText">Log In</p>
+        </div>
         <div class="arrow-left"></div>
     </div>
 
