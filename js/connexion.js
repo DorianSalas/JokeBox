@@ -9,23 +9,34 @@ This serves as an auto-update when refreshing page
 Do as you please now
 */
 
+const leftTitle = document.getElementById("divCo");
 const mainTitle = document.getElementById("mainTitle");
+const rightTitle = document.getElementById("divDeco");
+
 const needLogin = document.getElementsByClassName("needLogin");
 const needLogout = document.getElementsByClassName("needLogout");
+
+
 
 function connexionCallback(action) {
     if (action === "ON") { // runs upon Login
         mainTitle.innerText = sessionStorage.getItem("connectedAs");
+        leftTitle.classList.remove("bgChanging");
+        rightTitle.classList.add("bgChanging");
         filterNeedLogin("flex");
-    }
 
+        console.log("You are logged in !");
+    }
 
 
     else if (action === "OFF") { // runs upon Logout
         mainTitle.innerText = "JokeBox";
+        rightTitle.classList.remove("bgChanging");
+        leftTitle.classList.add("bgChanging");
         filterNeedLogin("none");
-    }
 
+        console.log("You are disconnected.");
+    }
 
 
     else if (action === "TRY") { // runs upon start of application

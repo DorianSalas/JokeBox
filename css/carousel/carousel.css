@@ -7,7 +7,7 @@
 
 .filterItem {
 
-    border: 1px solid black;
+    box-shadow: 0px 0px 10px black;
 
     width: 180px;
     height: 180px;

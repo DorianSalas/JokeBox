@@ -1,10 +1,8 @@
 async function getSongs(url) {
     let oui = await fetch(url);
-    // console.log(oui.text());
     return oui.text();
 }
 songList = null;
-// console.log(getSongs('json/listsong.json'));
 getSongs('../php/songFetchApi.php').then(data => {
     data = JSON.parse(data);
     // Some things here went to ListFilter.js !!
