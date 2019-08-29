@@ -87,4 +87,7 @@
 	<div id='divAddSong'>
 		<img src="img/crossOrange.png">
 	</div>
+	<div id='divAddPlaylist'>
+		<img src="img/crossVert.png">
+	</div>
 </div>

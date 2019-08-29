@@ -180,7 +180,7 @@
     border: solid 1px black;
 }
 
-#divAddSong {
+#divAddSong, #divAddPlaylist {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,6 +190,34 @@
     border: solid black 2px; */
 }
 
-#divAddSong img {
+#divAddSong img, #divAddPlaylist img {
     height: 100%;
+}
+
+#divAddSong img:hover, #divAddPlaylist img:hover {
+    cursor: pointer;
+}
+
+/*MODALE*/
+#playlist_all{
+    background-color: lightgray;
+    height: 200px;
+    width: 300px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#playlist_wrap, #playlist_songs {
+    width: 120px;
+    margin: 3px;
+    background-color: white; 
+}
+
+#playlist_name{
+    width: 100%
 }
