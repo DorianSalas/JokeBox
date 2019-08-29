@@ -16,7 +16,7 @@ $('#divCo').on('click', async () => {
         }
     });
     if (didComplete) {
-        fetch('../php/connexionApi.php?username=' + results.value[0] + '&pass=' + results.value[1]).then(async promise => {
+        fetch('php/connexionApi.php?username=' + results.value[0] + '&pass=' + results.value[1]).then(async promise => {
             return await promise.json();
         }).then(answer => {
             if (answer['status'] === "OK") {

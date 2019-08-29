@@ -5,17 +5,9 @@ async function getSongs(url) {
 }
 songList = null;
 // console.log(getSongs('json/listsong.json'));
-getSongs('json/listsong.json').then(data => {
-    // res.write(data);
-    // console.log('test');
+getSongs('../php/songFetchApi.php').then(data => {
     data = JSON.parse(data);
-    // res.end()
-    // console.log(data);
-    let myResultDOM = '';
-
     // Some things here went to ListFilter.js !!
-
-
     jsonFetchedCallback(data); // This function is in 'main.js'
 });
 

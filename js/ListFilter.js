@@ -3,6 +3,8 @@ class ListFilter {
     constructor(data, updaterFunc) {
         this.rawData = data; // This is useful for backup (like filter)
 
+        console.log(this.rawData);
+
         this.update = updaterFunc;
         this.sortAlphabeticalAsc();
     }
@@ -10,7 +12,7 @@ class ListFilter {
     render(newData) {
         let assembledHtml = ''; // create temp variable
         newData.forEach(element => { // build temp variable
-            assembledHtml += ('<div class="song" value="' + element.url + '"> <img src="' + element.thumb + '" class="song_img"> <div class="song_info"> <div class="song_title">' + element.title + '</div> <div class="song_artist">' + element.artist + '</div> </div> </div>');
+            assembledHtml += ('<div class="song" value="' + element.title + '"><img src="' + element.imgLink + '" class="song_img"> <div class="song_info"> <div class="song_title">' + element.title + '</div> <div class="song_artist">' + element.author + '</div> </div> </div>');
         });
         document.getElementById('listsong').innerHTML = assembledHtml; // push temp variable
         this.update();
