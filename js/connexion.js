@@ -12,13 +12,19 @@ Do as you please now
 const mainTitle = document.getElementById("mainTitle");
 
 function connexionCallback(action) {
-    if (action === "ON") {
+    if (action === "ON") { // runs upon Login
         mainTitle.innerText = sessionStorage.getItem("connectedAs");
     }
-    else if (action === "OFF") {
+
+
+
+    else if (action === "OFF") { // runs upon Logout
         mainTitle.innerText = "JokeBox";
     }
-    else if (action === "TRY") {
+
+
+
+    else if (action === "TRY") { // runs upon start of application
         if (sessionStorage.getItem("connectedAs") !== null) {
             connexionCallback("ON");
         }
