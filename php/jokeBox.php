@@ -3,15 +3,15 @@
         <source src="" />
     </audio>
 </div>
- <!-- <div class="jukebox">
-   <div class="jukebox__head">
+<div class="jukebox">
+    <div class="jukebox__head">
         <div class="jukebox__record">
             <img class="jukebox__record-image" src="https://i1.sndcdn.com/artworks-000218580276-2mqw0f-t500x500.jpg" />
-        </div> -->
+        </div>
         <!--     <div class="jukebox__rating"></div> -->
-    <!-- </div>
+    </div>
     <div class="jukebox__body">
-        <div class="jukebox__internal"> -->
+        <div class="jukebox__internal">
             <!-- <ul>
 
                 <img src='img/simplon.png'>
@@ -21,7 +21,7 @@
                 // }
                 ?>
             </ul> -->
-            <!-- <div class="logo-flip-box" data-toggle="modal" data-target="#exampleModalCenter">
+            <div class="logo-flip-box" data-toggle="modal" data-target="#exampleModalCenter">
                 <div id="logo-front-side">
                     <img class="logo-front-side" src="img/simplon.png" alt="">
                 </div>
@@ -34,7 +34,7 @@
     </div>
     <div class="jukebox__leg jukebox__leg--left"></div>
     <div class="jukebox__leg jukebox__leg--right"></div>
-</div> -->
+</div>
 <!-- <div id="jukeInfos">
     <h3>INFOS</h3>
     <svg width="200px" height="100%" viewBox="0 0 42 42" class="donut">

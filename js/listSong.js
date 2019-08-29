@@ -3,7 +3,7 @@ async function getSongs(url) {
     return oui.text();
 }
 songList = null;
-getSongs('../php/songFetchApi.php').then(data => {
+getSongs('php/songFetchApi.php').then(data => {
     data = JSON.parse(data);
     // Some things here went to ListFilter.js !!
     jsonFetchedCallback(data); // This function is in 'main.js'
