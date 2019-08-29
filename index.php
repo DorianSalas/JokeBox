@@ -46,13 +46,6 @@ require 'php/databaseConnexion.php';
 
     </div>
 
-    <?php
-    if (isset($_SESSION['connectedAs'])) {
-        echo '<script>let connectedAs = "' . $_SESSION['connectedAs'] . '";';
-        echo 'console.log("Connected As : " + connectedAs)</script>';
-    }
-    ?>
-
     <script src="js/jquery.js"></script> <!-- Required for slick - carousel -->
     <script src="js/slick.js"></script> <!-- Used for carousel -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script> <!-- SweetAlert2 -->
@@ -63,6 +56,7 @@ require 'php/databaseConnexion.php';
     <script src="js/carousel.js"></script>
     <script src="js/listSong.js"></script>
     <script src="js/jokeBox.js"></script>
+    <script src="js/connexion.js"></script>
 
     <script src="js/main.js"></script>
 

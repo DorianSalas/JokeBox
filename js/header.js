@@ -20,7 +20,8 @@ $('#divCo').on('click', async () => {
             return await promise.json();
         }).then(answer => {
             if (answer['status'] === "OK") {
-                window.location.href = "../php/didConnectProcess.php?username=" + answer['text'];
+                sessionStorage.setItem('connectedAs', answer['text']);
+                connexionCallback("ON");
             }
             else {
                 Swal.fire({
@@ -35,5 +36,6 @@ $('#divCo').on('click', async () => {
 });
 
 $('#divDeco').on('click', () => {
-    window.location.href = "../php/logoutProcess.php";
+    sessionStorage.removeItem('connectedAs');
+    connexionCallback("OFF");
 });
