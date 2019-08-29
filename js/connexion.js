@@ -2,6 +2,10 @@
 This function runs once someone successfully connects on the page (with action === "ON")
 It also runs when a user disconnects (with action === "OFF")
 
+
+This function runs at startup of application with action === "TRY"
+This serves as an auto-update when refreshing page
+
 Do as you please now
 */
 
@@ -13,6 +17,14 @@ function connexionCallback(action) {
     }
     else if (action === "OFF") {
         mainTitle.innerText = "JokeBox";
+    }
+    else if (action === "TRY") {
+        if (sessionStorage.getItem("connectedAs") !== null) {
+            connexionCallback("ON");
+        }
+        else {
+            connexionCallback("OFF");
+        }
     }
 
     // sessionStorage.getItem("connectedAs");

@@ -40,4 +40,5 @@ function jsonFetchedCallback(data) {
         });
     }
 
+    connexionCallback("TRY"); // Startup verification of connexion status => js/connexion.js
 }
