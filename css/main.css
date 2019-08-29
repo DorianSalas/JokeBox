@@ -63,3 +63,7 @@ body{
   		height: auto;
 	}
 }
+
+.needLogin, .needLogout {
+    display: none;
+}

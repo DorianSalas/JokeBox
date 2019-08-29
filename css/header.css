@@ -19,7 +19,6 @@ header div {
 #divDeco p {
     /* border-right: solid 2px black; */
     width: 100%;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
