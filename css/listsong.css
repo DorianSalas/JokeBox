@@ -121,11 +121,13 @@
 	background-size: contain;
 	background-repeat: no-repeat;*/
     height: 100px;
+    width: 100px;
 }
 
 .song_info {
     max-width: 100%;
     padding: 3px;
+    margin-left: 5px;
 }
 
 .song_title {
