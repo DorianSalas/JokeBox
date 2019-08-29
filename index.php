@@ -35,14 +35,14 @@
 			</div>
 
 			<div class="main">
-
+<!-- 
 				<div class="jokebox">
-					<?php include "php/jokeBox.php" ?>
+					<?php //include "php/jokeBox.php" ?>
 				</div>
 
 				<div class="genre">
-					<?php include "php/carousel.php" ?>
-				</div>
+					<?php //include "php/carousel.php" ?>
+				</div> -->
 
 				<div class="listsong">
 					<?php include "php/listsong.php" ?>
