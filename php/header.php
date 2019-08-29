@@ -7,7 +7,7 @@
     </div>
 
     <div id='divTitle'>
-        <h1>JokeBox</h1>
+        <h1 id="mainTitle">JokeBox</h1>
     </div>
 
     <div id='divDeco'>
