@@ -1,14 +1,19 @@
+/*
+This function runs once someone successfully connects on the page (with action === "ON")
+It also runs when a user disconnects (with action === "OFF")
+
+Do as you please now
+*/
+
+const mainTitle = document.getElementById("mainTitle");
+
 function connexionCallback(action) {
     if (action === "ON") {
-        console.log("YES " + action);
+        mainTitle.innerText = sessionStorage.getItem("connectedAs");
     }
-    else {
-        console.log(action);
+    else if (action === "OFF") {
+        mainTitle.innerText = "JokeBox";
     }
-    if (sessionStorage.getItem('connectedAs') !== null) {
-        console.log("Connected !");
-    }
-    else {
-        console.log("...");
-    }
+
+    // sessionStorage.getItem("connectedAs");
 }
