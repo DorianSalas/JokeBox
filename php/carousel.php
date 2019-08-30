@@ -29,7 +29,7 @@
 
         <div id="Slam" class="filterItem">
         </div>
-        <div id="Experimental" class="filterItem">
+        <div id="Electro" class="filterItem">
         </div>
 
         <div id="Metal" class="filterItem">
