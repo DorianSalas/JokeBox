@@ -1,67 +1,70 @@
 /*main.css*/
-	/*main css file of this php template*/
 
-body{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	
+/*main css file of this php template*/
 
-	padding: 0;
-	margin: 0;
-
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
     font-family: Arial;
-    
     overflow-y: hidden;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 50px 1fr;
-  grid-template-areas: "header" "main";
-
-  height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: "header" "main";
+    height: 100vh;
 }
 
 .main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "genre jokebox listsong";
-  grid-area: main;
-
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "genre jokebox listsong";
+    grid-area: main;
+    width: 100vw;
 }
 
-.jokebox { grid-area: jokebox;
-	background-color: gray;
-	position: relative;
+.jokebox {
+    grid-area: jokebox;
+    background-color: gray;
+    position: relative;
 }
 
-.genre { grid-area: genre;
-	background-color: lightgray;
-	position: relative;
+.genre {
+    grid-area: genre;
+    background-color: lightgray;
+    position: relative;
+    max-width: 100%;
 }
 
-.listsong { grid-area: listsong;
-	background-color: lightblue;
+.listsong {
+    grid-area: listsong;
+    background-color: lightblue;
 }
 
-.header { grid-area: header;
-	background-color: pink;
+.header {
+    grid-area: header;
+    background-color: pink;
 }
 
 @media only screen and (max-width: 1200px) {
-	.main {
-	  display: grid;
-	  grid-template-columns: 1fr;
-	  grid-template-rows: 1fr 1fr 1fr;
-	  grid-template-areas: "jokebox" "listsong" "genre";
-	  grid-area: main;
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "jokebox" "listsong" "genre";
+        grid-area: main;
+        height: auto;
+    }
 
-  		height: auto;
-	}
+    body {
+        overflow-y: visible;
+    }
 }
 
 .needLogin, .needLogout {
