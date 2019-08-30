@@ -45,8 +45,8 @@ require 'php/databaseConnexion.php';
         </div>
 
     </div>
-
-    <script src="js/jquery.js"></script> <!-- Required for slick - carousel -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+    <!-- <script src="js/jquery.js"></script> Required for slick - carousel -->
     <script src="js/slick.js"></script> <!-- Used for carousel -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script> <!-- SweetAlert2 -->
 

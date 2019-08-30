@@ -34,12 +34,39 @@ async function addSong() {
 
                             document.getElementById('titleSongInput').value,
                             document.getElementById('tagSongInput').value,
-                            document.getElementById('imgSong').files[0],
+                            document.getElementById('imgSong').files[0].name,
                             dataUrlImg,
-                            document.getElementById('fileSong').files[0],
+                            document.getElementById('fileSong').files[0].name,
                             dataUrlSong
                         ]
                         console.log(test);
+                        test2 = JSON.stringify(test);
+                        // $.ajax({
+                        //     url: 'php/insertSong.php',
+                        //     type: 'post',
+                        //     data: {
+                        //         json: test2
+                        //     },
+                        //     success: (data) => {
+                        //         console.log('data');
+                        //         console.log(data);
+                        //     }
+                        // });
+
+
+                        fetch('php/insertSong.php?data=' + test2
+
+                            ).then(function(response) {
+
+                                return response.json();
+                            })
+                            .then(function(myBlob) {
+                                // var objectURL = URL.createObjectURL(myBlob);
+                                // myImage.src = objectURL;
+                                console.log(myBlob);
+                                console.log(myBlob.text());
+                                console.log(myBlob.array());
+                            });
                     };
                     fr2.readAsDataURL(document.getElementById('fileSong').files[0]);
                 };
