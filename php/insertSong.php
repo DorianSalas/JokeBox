@@ -1,5 +1,5 @@
 <?php
-
+require('databaseConnexion.php');
     // $bla = json_decode($_POST['json']);
 
     // $linkSong = 'music/' . str_replace(' ','', $_POST['json'][4]) ;
@@ -18,7 +18,7 @@
     // fclose($fichierImg);
 
     
-    var_dump($_GET);
+    echo($_POST['json'][0]);
 // $linkSong = 'music/' . $_POST['json'][4] ;
 // $fichierSong = fopen($linkSong, 'w+');
 // fwrite($fichierSong, $_POST['json'][5]);
@@ -28,3 +28,12 @@
 // $fichierImg = fopen($linkImg, 'w+');
 // fwrite($fichierImg, $_POST['json'][3]);
 // fclose($fichierImg);
+
+$req = $dtb->prepare('INSERT INTO song(title, author, tag, imgLink) VALUES(:title, :author, :tag, :imgLink)');
+$req->execute(array(
+	'title' => $_POST['json'][0],
+	'author' => $_POST['json'][2],
+	'tag' => $_POST['json'][1],
+	'imgLink' => $_POST['json'][3]
+	));
+

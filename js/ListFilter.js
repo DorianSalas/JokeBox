@@ -13,6 +13,8 @@ class ListFilter {
             assembledHtml += ('<div class="song" value="' + element.title + '.mp3"><img src="img/thumbs/' + element.imgLink + '" class="song_img"> <div class="song_info"> <div class="song_title">' + element.title + '</div> <div class="song_artist">' + element.artist + '</div> </div> <div class="songPanel"> <div class="editBtn needLogin">Edit</div><div class="deleteBtn needLogin">Delete</div></div> </div>');
         });
         document.getElementById('listsong').innerHTML = assembledHtml; // push temp variable
+        // let deleteBtns = document.querySelector('.editBtn');
+
         this.update();
     }
 
@@ -25,11 +27,9 @@ class ListFilter {
         newData.sort((a, b) => {
             if (a.title.toUpperCase() < b.title.toUpperCase()) {
                 return -5;
-            }
-            else if (a.title.toUpperCase() > b.title.toUpperCase()) {
+            } else if (a.title.toUpperCase() > b.title.toUpperCase()) {
                 return 5;
-            }
-            else {
+            } else {
                 return 0;
             }
         });
@@ -43,11 +43,9 @@ class ListFilter {
         newData.sort((a, b) => {
             if (a.title.toUpperCase() > b.title.toUpperCase()) {
                 return -5;
-            }
-            else if (a.title.toUpperCase() < b.title.toUpperCase()) {
+            } else if (a.title.toUpperCase() < b.title.toUpperCase()) {
                 return 5;
-            }
-            else {
+            } else {
                 return 0;
             }
         });
@@ -61,11 +59,9 @@ class ListFilter {
         newData.sort((a, b) => {
             if (a.artist.toUpperCase() < b.artist.toUpperCase()) {
                 return -5;
-            }
-            else if (a.artist.toUpperCase() > b.artist.toUpperCase()) {
+            } else if (a.artist.toUpperCase() > b.artist.toUpperCase()) {
                 return 5;
-            }
-            else {
+            } else {
                 return 0;
             }
         });
@@ -79,11 +75,9 @@ class ListFilter {
         newData.sort((a, b) => {
             if (a.artist.toUpperCase() > b.artist.toUpperCase()) {
                 return -5;
-            }
-            else if (a.artist.toUpperCase() < b.artist.toUpperCase()) {
+            } else if (a.artist.toUpperCase() < b.artist.toUpperCase()) {
                 return 5;
-            }
-            else {
+            } else {
                 return 0;
             }
         });

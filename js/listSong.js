@@ -15,7 +15,7 @@ async function addSong() {
     if (sessionStorage.getItem('connectedAs') !== null) {
         let addSongForm = await Swal.fire({
             titleText: 'Add song',
-            html: '<div id="addSongInputGroup"><label for="titleSongInput">Title :</label><input type="text" id="titleSongInput"></input><label for="tagSongInput">Tag :</label><input type="text" id="tagSongInput"></input><label for="imgSong">Choisir une image :</label><input type="file" id="imgSong"><label for="fileSong">Song :</label><input type="file" id="fileSong"></div>',
+            html: '<div id="addSongInputGroup"><label for="titleSongInput">Title :</label><input type="text" id="titleSongInput"></input><label for="tagSongInput">Tag :</label><input type="text" id="tagSongInput"></input><label for="authorInput">Author :</label><input type="text" id="authorInput"></input><label for="imgSong">Choisir une image :</label><input type="file" id="imgSong"><label for="fileSong">Song :</label><input type="file" id="fileSong"></div>',
             focusConfirm: false,
             preConfirm: async() => {
                 dataUrlImg = null;
@@ -34,6 +34,7 @@ async function addSong() {
 
                             document.getElementById('titleSongInput').value,
                             document.getElementById('tagSongInput').value,
+                            document.getElementById('authorInput').value,
                             document.getElementById('imgSong').files[0].name,
                             dataUrlImg,
                             document.getElementById('fileSong').files[0].name,
@@ -41,32 +42,32 @@ async function addSong() {
                         ]
                         console.log(test);
                         test2 = JSON.stringify(test);
-                        // $.ajax({
-                        //     url: 'php/insertSong.php',
-                        //     type: 'post',
-                        //     data: {
-                        //         json: test2
-                        //     },
-                        //     success: (data) => {
-                        //         console.log('data');
-                        //         console.log(data);
-                        //     }
-                        // });
+                        $.ajax({
+                            url: 'php/insertSong.php',
+                            type: 'post',
+                            data: {
+                                json: test
+                            },
+                            success: (data) => {
+                                console.log('data');
+                                console.log(data);
+                            }
+                        });
 
 
-                        fetch('php/insertSong.php?data=' + test2
+                        // fetch('php/insertSong.php?data=' + test2
 
-                            ).then(function(response) {
+                        //     ).then(function(response) {
 
-                                return response.json();
-                            })
-                            .then(function(myBlob) {
-                                // var objectURL = URL.createObjectURL(myBlob);
-                                // myImage.src = objectURL;
-                                console.log(myBlob);
-                                console.log(myBlob.text());
-                                console.log(myBlob.array());
-                            });
+                        //         return response.json();
+                        //     })
+                        //     .then(function(myBlob) {
+                        //         // var objectURL = URL.createObjectURL(myBlob);
+                        //         // myImage.src = objectURL;
+                        //         console.log(myBlob);
+                        //         console.log(myBlob.text());
+                        //         console.log(myBlob.array());
+                        //     });
                     };
                     fr2.readAsDataURL(document.getElementById('fileSong').files[0]);
                 };
@@ -117,18 +118,18 @@ let tempoPlaylist = [
 let htmlPlaylistEditor = '<div id="playlist_all"><div id="playlist_wrap"><input type="text" id="playlist_name" name="playlist_name" placeholder="Playlist"><div id="playlist_added">'
 
 for (var i = tempoPlaylist.length - 1; i >= 0; i--) {
-    htmlPlaylistEditor+='<div class="playlist_song">'+tempoPlaylist[i]+'</div>'    
+    htmlPlaylistEditor += '<div class="playlist_song">' + tempoPlaylist[i] + '</div>'
 }
 
-htmlPlaylistEditor+='</div></div><div id="playlist_songs">'
+htmlPlaylistEditor += '</div></div><div id="playlist_songs">'
 
 for (var i = tempoListSong.length - 1; i >= 0; i--) {
-    htmlPlaylistEditor+='<div class="playlist_song">'+tempoListSong[i]+'</div>'    
+    htmlPlaylistEditor += '<div class="playlist_song">' + tempoListSong[i] + '</div>'
 }
 
-htmlPlaylistEditor+='</div></div>';
+htmlPlaylistEditor += '</div></div>';
 
-async function addPlaylist(){
+async function addPlaylist() {
     if (sessionStorage.getItem('connectedAs') !== null) {
         let addSongForm = await Swal.fire({
             titleText: 'Your playlist',
@@ -137,11 +138,11 @@ async function addPlaylist(){
             preConfirm: () => {
 
                 return [
-                    
+
                 ]
             }
         });
-        
+
     } else { // if disconnected
         Swal.fire({
             titleText: 'You must be connected to use this !'
